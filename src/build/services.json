@@ -1,0 +1,38 @@
+[
+    {
+        "id": "1",
+        "name": "Prescribed Laboratory Services",
+        "img": "https://th.bing.com/th/id/R.769464281cdcaeded99a927a35e1b2de?rik=IoJKxjBRs3XLyA&pid=ImgRaw&r=0",
+        "description": "A hospital pharmacy is a department within a hospital that prepares, compounds, stocks and dispenses inpatient medications."
+    },
+    {
+        "id": "2",
+        "name": "Prescription services",
+        "img": "https://th.bing.com/th/id/OIF.7OfA10ffKEwht77qhNeaLA?pid=ImgDet&rs=1",
+        "description": "A prescription is a written order for compounding,dispensingand administrating drug."
+    },
+    {
+        "id": "3",
+        "name": "Medication Services",
+        "img": "https://www.chula.ac.th/wp-content/uploads/2018/03/technical-medical-hero-768x480.jpg",
+        "description": "Medication Services are a spectrum of patient-centered, pharmacist-provided, collaborative services that focus on medication effectiveness, safety,"
+    },
+    {
+        "id": "4",
+        "name": "Vaccinaion Services",
+        "img": "https://th.bing.com/th/id/OIP.-e5AxVbCFomTMpLMVCVETgHaFM?pid=ImgDet&rs=1",
+        "description": "Vaccination services address a particular community need that cannot be met by existing vaccination opportunities, such as the Commonwealth’s vaccination sites"
+    },
+    {
+        "id": "5",
+        "name": "Testing Monitoring Services",
+        "img": "https://th.bing.com/th/id/OIP.dePy75e8Ld2U2zejhzhcSAHaE8?pid=ImgDet&rs=1",
+        "description": "Testing and monitoring is one of the most critical elements of an effective ethics and compliance program."
+    },
+    {
+        "id": "6",
+        "name": "Wellness Consultation Services",
+        "img": "https://th.bing.com/th/id/OIP.XA0xdlNtPW5mZEGR2o_RKAHaE8?pid=ImgDet&rs=1",
+        "description": "Concerns about mental health balanacing life as a graduate student,professional wllness goal setting."
+    }
+]

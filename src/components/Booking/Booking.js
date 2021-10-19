@@ -9,6 +9,8 @@ const Booking = () => {
             .then(res => res.json())
             .then(data => setBooking(data))
     }, [booking])
+
+
     return (
         <div >
             <h2 className="text-primary mt-5">Our services</h2>
