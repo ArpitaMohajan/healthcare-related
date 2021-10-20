@@ -12,6 +12,7 @@ const Login = () => {
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
     const [error, setError] = useState('')
+
     const [isLogin, setIsLogin] = useState(false)
     const handleLogin = (e) => {
         // console.log('nbnb')
@@ -67,6 +68,7 @@ const Login = () => {
                 console.log(user)
                 setError('')
                 verifyEmail()
+
             })
             .catch(error => {
                 setError(error.message)

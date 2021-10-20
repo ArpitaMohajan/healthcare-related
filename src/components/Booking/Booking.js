@@ -3,24 +3,27 @@ import { useParams } from 'react-router';
 
 
 const Booking = () => {
-    const [bookingDetail, setBooking] = useState([])
-    const { detailId } = useParams()
+    const [bookingDetail, setBookingDetail] = useState({})
+    const { id } = useParams()
     const { serviceId } = useParams()
     useEffect(() => {
-        fetch('/details.json')
+        fetch('/services.json')
             .then(res => res.json())
-            .then(data => setBooking(data))
+            .then(data => {
+                const ExactIteam = data.find(booking => booking.id == id)
+                setBookingDetail(ExactIteam)
+            })
     }, [])
-    const ExactIteam = bookingDetail.find(booking => booking.id === detailId);
+
 
 
     return (
         <div>
             <h1>This is service Detail Page:{serviceId} </h1>
 
-            <img width="75%" src={ExactIteam?.img} alt="" srcset="" />
+            <img width="75%" src={bookingDetail?.img} alt="" srcset="" />
 
-            <h3>Description : {ExactIteam?.description}</h3>
+            <h3 className="text-info">Description : {bookingDetail?.description}</h3>
         </div>
     );
 };
