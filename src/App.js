@@ -43,7 +43,8 @@ function App() {
             <Route path='/expert'>
               <Expert></Expert>
             </Route>
-            <PrivateRoute path="/booking/:service">
+
+            <PrivateRoute path="/booking/:serviceId">
               <Booking></Booking>
             </PrivateRoute>
             <Route exact path='*'>

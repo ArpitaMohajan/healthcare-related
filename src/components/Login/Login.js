@@ -60,7 +60,7 @@ const Login = () => {
     }
 
     const createNewUser = (email, password) => {
-        console.log('ghghg')
+        // console.log('ghghg')
         createUserWithEmailAndPassword(auth, email, password)
             .then(result => {
                 const user = result.user;

@@ -1,29 +1,26 @@
 import React, { useEffect, useState } from 'react';
-import Bokks from './Bokks';
+import { useParams } from 'react-router';
+
 
 const Booking = () => {
-    const [booking, setBooking] = useState([])
-    const [boks, setBoks] = useState([])
+    const [bookingDetail, setBooking] = useState([])
+    const { detailId } = useParams()
+    const { serviceId } = useParams()
     useEffect(() => {
-        fetch('details.json')
+        fetch('/details.json')
             .then(res => res.json())
             .then(data => setBooking(data))
-    }, [booking])
+    }, [])
+    const ExactIteam = bookingDetail.find(booking => booking.id === detailId);
 
 
     return (
-        <div >
-            <h2 className="text-primary mt-5">Our services</h2>
-            <div className="service-container">
-                {
-                    booking.map(bokks => <Bokks
-                        key={bokks}
-                        bokks={bokks}
-                    ></Bokks>)
+        <div>
+            <h1>This is service Detail Page:{serviceId} </h1>
 
-                }
-            </div>
+            <img width="75%" src={ExactIteam?.img} alt="" srcset="" />
 
+            <h3>Description : {ExactIteam?.description}</h3>
         </div>
     );
 };
