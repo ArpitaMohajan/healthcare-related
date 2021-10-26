@@ -14,6 +14,8 @@ import Details from './components/Booking/Booking';
 import Booking from './components/Booking/Booking';
 import About from './components/About/About';
 import Expert from './components/Expert/Expert';
+import AddService from './components/AddService/AddService';
+import ManageServices from './components/ManageServices/ManageServices';
 
 
 
@@ -34,19 +36,25 @@ function App() {
             <Route path='/login'>
               <Login></Login>
             </Route>
-            <Route path='/register'>
-              <Register></Register>
-            </Route>
+            {/* <Route path='/register'>
+            <Register></Register>
+            </Route> */}
             <Route path='/about'>
               <About></About>
             </Route>
             <Route path='/expert'>
               <Expert></Expert>
             </Route>
-
-            <PrivateRoute path="/booking/:id">
+            <Route path="/addService">
+              <AddService></AddService>
+            </Route>
+            <Route path="/manageServices">
+              <ManageServices></ManageServices>
+            </Route>
+            <PrivateRoute path="/booking/:serviceId">
               <Booking></Booking>
             </PrivateRoute>
+
             <Route exact path='*'>
               <NotFound></NotFound>
             </Route>
